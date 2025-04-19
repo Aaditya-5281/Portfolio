@@ -2,6 +2,10 @@
 
 A modern, interactive portfolio website designed to look and function like a terminal. Built with HTML, CSS, and JavaScript, this portfolio provides a unique and engaging way to showcase your skills and projects.
 
+## Deployed Website
+
+🌐 [Live Demo](https://adi-portfoli0.netlify.app/)
+
 ## Features
 
 - 🖥️ Terminal-like interface with command prompt
