@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1b26;
+    font-family: 'Fira Code', monospace;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #a9b1d6;
+    padding: 0;
+    margin: 0;
+}
+
+.terminal {
+    width: 100%;
+    height: 100vh;
+    background-color: #24283b;
+    border-radius: 0;
+    box-shadow: none;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.terminal-header {
+    background-color: #1a1b26;
+    padding: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.terminal-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.terminal-buttons span {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.close {
+    background-color: #ff5f57;
+}
+
+.minimize {
+    background-color: #febc2e;
+}
+
+.maximize {
+    background-color: #28c840;
+}
+
+.terminal-content {
+    padding: 20px;
+    height: calc(100vh - 32px);
+    overflow-y: auto;
+    flex: 1;
+}
+
+.line {
+    margin-bottom: 15px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    line-height: 1.5;
+}
+
+.prompt {
+    color: #7aa2f7;
+}
+
+.path {
+    color: #9ece6a;
+}
+
+.dollar {
+    color: #7dcfff;
+}
+
+.command {
+    color: #a9b1d6;
+}
+
+.command-input {
+    color: #a9b1d6;
+    outline: none;
+    min-width: 1px;
+    caret-color: #a9b1d6;
+}
+
+/* Remove the extra cursor element */
+.cursor {
+    display: none;
+}
+
+/* Container spacing */
+.social-links, .about-me, .help-prompt, .help-header, .help-commands,
+.interests-header, .interests-list, .contact-header, .contact-list {
+    margin-bottom: 20px;
+}
+
+.social-links br, .help-commands br, .interests-list br, .contact-list br {
+    margin-bottom: 10px;
+    display: block;
+    content: "";
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1b26;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #414868;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #545c7e;
+}
+
+/* Output styling */
+#output {
+    margin-bottom: 15px;
+}
+
+#output div {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* Command output styling */
+.command-output {
+    margin-left: 20px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
